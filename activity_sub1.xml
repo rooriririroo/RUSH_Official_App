@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity1">
+
+    <Button
+        android:id="@+id/picture_button"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:text="사진"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/video_button"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:background="#ffffff"
+        android:text="영상"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/file_button"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="144dp"
+        android:background="#ffffff"
+        android:text="파일"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/vote_button"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:background="#ffffff"
+        android:text="투표"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="288dp"
+        android:background="#ffffff"
+        android:text="지도"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" >
+
+        <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="0dp"
+             android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/input_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:hint="글을 입력하세요" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@color/colorPrimary" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CADBAE"
+        android:text="취소"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="#CADBAE"
+        android:text="완료"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
